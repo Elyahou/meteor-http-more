@@ -69,10 +69,9 @@ var _call = function(method, url, options, callback) {
   ////////// Kickoff! //////////
 
   delete options.auth;  // auth, if any, was moved into the headers
-  var req_options = _.extend(options, {
+  var req_options = _.extend({encoding: "utf8"}, options, {
     url: new_url,
     method: method,
-    encoding: "utf8",
     body: content,
     headers: headers
   });
