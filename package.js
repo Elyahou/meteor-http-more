@@ -5,7 +5,7 @@ Package.describe({
   git: 'https://github.com/dandv/meteor-http-more.git'
 });
 
-Npm.depends({request: "2.33.0"});
+Npm.depends({request: "2.88.1"});
 
 Package.onUse(function (api) {
   api.versionsFrom('0.9.0');
